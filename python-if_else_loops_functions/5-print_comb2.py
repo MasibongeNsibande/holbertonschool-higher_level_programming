@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-for x in range(0, 99):
-    print("{:0>2d}".format(x), end=", ")
-
-print(x+1)
+for i in range(10):
+    for j in range(i + 1, 10):
+        if i == 8 and j == 9:
+            print("{:d}{:d}".format(i, j))
+        else:
+            print("{:d}{:d}, ".format(i, j), end="")
+            
